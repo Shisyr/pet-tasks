@@ -1,0 +1,112 @@
+
+$clear-color: #a5a5a5;
+$operator-color: #f1a33c;
+$number-color: #4a4a4a87;
+$result: #000;
+
+.calculatorContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  .calculator {
+    height: 600px;
+    width: 320px;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: $result;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .result {
+      color: white;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-right: 20px;
+      font-size: 80px;
+      padding-bottom: 15px;
+      height: 100%;
+    }
+    .length-4 {
+      font-size: 60px;
+    }
+    .length-5 {
+      font-size: 60px;
+    }
+    .length-6 {
+      font-size: 40px;
+    }
+    .keyboard {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 24px;
+      .utils {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        .column {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            padding: 20px 10px;
+            border-radius: 50%;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          .clear {
+            background-color: $clear-color;
+            &:active {
+              background-color: #bdbaba;
+            }
+          }
+          .operator {
+            background-color: $operator-color;
+            color: white;
+            &:active {
+              background-color: $clear-color;
+            }
+          }
+          .number {
+            color: white;
+            background-color: $number-color;
+            &:active {
+              background-color: #93939387;
+            }
+          }
+          .dot {
+            color: white;
+            background-color: $number-color;
+            &:active {
+              background-color: #93939387;
+            }
+          }
+        }
+      }
+      .first-column {
+        width: 100%;
+        .zero {
+          padding: 20px 10px 20px 25px;
+          border-radius: 50px;
+          display: flex;
+          margin: 5px;
+          color: white;
+          background-color: $number-color;
+          &:hover {
+            cursor: pointer;
+          }
+          &:active {
+            background-color: #93939387;
+          }
+        }
+      }
+    }
+  }
+}

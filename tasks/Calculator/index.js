@@ -13,7 +13,6 @@ function divideTwoNumbers(str) {
     return Number(str[0]) / Number(str[1]);
 }
 
-
 function calculateTwoNumbers(str) {
     const isContainsPlus = str.includes('+');
     const isContainsMinus = str.includes('-');
@@ -101,7 +100,6 @@ String.prototype.calculate = function() {
     console.log(afterMultiply);
     console.log('afterMultiply');
     return calculateBySequence(afterMultiply);
-
 };
 
 // '5 + 6 - (3 * (5 + (5 + 7))) * 5 / 9 + (3 + (7 + (8 + 9))) * 3 / 6'
